@@ -20,7 +20,6 @@ public class L_098_Validate_BST {
       if (!stack.isEmpty()) {
         p = stack.pop();
         if (!init) {
-          prev = p.val;
           init = true;
         } else if (prev >= p.val) return false; // !!!!注意BST是严格小于
 

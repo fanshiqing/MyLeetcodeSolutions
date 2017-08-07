@@ -42,20 +42,25 @@ public class O_25_Find_Path_in_Binary_Tree {
   }
 
   public static void main(String[] args) {
-    ArrayList<ArrayList<Integer> > outer = new ArrayList<ArrayList<Integer>>();
-    ArrayList<Integer> inner = new ArrayList<>();
+//    ArrayList<ArrayList<Integer> > outer = new ArrayList<ArrayList<Integer>>();
+//    ArrayList<Integer> inner = new ArrayList<>();
+//
+//    inner.add(10);
+//    inner.add(11);
+//    ArrayList<Integer> inner2 = new ArrayList<>(inner);
+//    outer.add(inner);
+//    ArrayList<ArrayList<Integer> > outer2 = new ArrayList<ArrayList<Integer>>(outer);
+//    System.out.println(outer);
+//    inner.remove(new Integer(10));
+//    System.out.println(inner);
+//    System.out.println(outer);
+//    System.out.println(inner2);
+//    System.out.println(outer2);
 
-    inner.add(10);
-    inner.add(11);
-    ArrayList<Integer> inner2 = new ArrayList<>(inner);
-    outer.add(inner);
-    ArrayList<ArrayList<Integer> > outer2 = new ArrayList<ArrayList<Integer>>(outer);
-    System.out.println(outer);
-    inner.remove(new Integer(10));
-    System.out.println(inner);
-    System.out.println(outer);
-    System.out.println(inner2);
-    System.out.println(outer2);
-
+    ArrayList<Integer> tmp = new ArrayList<>();
+    tmp.add(1);
+    ArrayList<Integer> tmp2 = new ArrayList<>(tmp);
+    tmp.remove(tmp.size() - 1);
+    System.out.println(tmp2);
   }
 }
