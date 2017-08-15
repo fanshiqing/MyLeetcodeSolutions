@@ -9,6 +9,13 @@ import java.util.PriorityQueue;
  * Created by sqfan on 8/11/17.
  */
 public class L_347_Top_K_Frequent_Elements {
+  /**
+   * 1. HashMap统计每个num出现次数；
+   * 2. 桶排序；
+   * 3. 逆序取数据；
+   * 时间：O(n)
+   * 空间：O(n)
+   */
   public List<Integer> topKFrequent(int[] nums, int k) {
     HashMap<Integer, Integer> map = new HashMap<>();
     ArrayList<Integer> result = new ArrayList<>();
