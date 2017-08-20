@@ -13,7 +13,7 @@ public class O_59_Symmetric_Tree {
       this.val = val;
     }
   }
-  
+
   boolean isSymmetrical(TreeNode root)
   {
     if (root == null) return true;
