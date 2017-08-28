@@ -1,4 +1,4 @@
-package Leetcode;
+package Leetcode.Array;
 
 /**
  * Created by sqfan on 8/11/17.
