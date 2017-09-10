@@ -1,13 +1,11 @@
-package Leetcode;
+package Leetcode.Binary_Search;
 
 /**
  * Created by sqfan on 8/11/17.
  * 找出两个有序数组的中位数,要求时间复杂度为O(log(m + n))
  */
 public class L_004_Median_of_Two_Sorted_Arrays {
-  /**
-   *
-   */
+
   public double findMedianSortedArrays(int[] nums1, int[] nums2) {
     int l1 = nums1.length;
     int l2 = nums2.length;
@@ -33,6 +31,8 @@ public class L_004_Median_of_Two_Sorted_Arrays {
     if (s2 >= nums2.length) return nums1[s1 + k];
     if (k == 0) return Math.min(nums1[s1], nums2[s2]);
 
+    // 当nums1[l1...r1]和nums2[l2...r2]不足k/2偏移时，下面的处理很巧妙:
+    // 较长的数组扔掉（k+1)/2 个数不会影响最终的第k个值。
     int aMid = Integer.MAX_VALUE, bMid = Integer.MAX_VALUE;
     if (s1 + k/2 < nums1.length) aMid = nums1[s1 + k/2];
     if (s2 + k/2 < nums2.length) bMid = nums2[s2 + k/2];
